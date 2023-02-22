@@ -1,13 +1,659 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.hoMe {
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav-bar {
+  height: 80px;
+  width: 100%;
+  background-color: azure;
+  position: sticky;
+}
+
+.nav-bar img {
+  height: 40px;
+  margin: 20px;
+  width: 140px;
+}
+
+.nav-bar a {
+  float: right;
+  margin: 30px;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  letter-spacing: -1px;
+}
+
+.nav-bar a:hover {
+  text-decoration: underline #25D366;
+}
+
+.nav-bar button {
+  height: 50px;
+  width: 135px;
+  border-radius: 25px;
+  border: 1px solid black;
+  background-color: #25D366;
+  float: right;
+  margin: 10px;
+}
+
+.twoimg {
+  height: 600px;
+  width: 95%;
+  background-image: url('images/316546300_547692113846445_7299710494491288098_n.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  margin-left: 30px;
+}
+
+.twoimg .firstPara {
+  font-size: 75px;
+  color: aliceblue;
+  margin-left: 50px;
+  font-weight: 500;
+  margin-top: 20px;
+  line-height: 80px;
+  letter-spacing: -1px;
+
+}
+
+.goodm {
+  height: 100px;
+  width: 100%;
+}
+
+.writtenContent {
+  height: 300px;
+  width: 100%;
+}
+.writtenContent .emoji{
+  margin-left: 780px;
+  font-size: 30px;
+
+}
+
+.secondPara {
+  font-size: 20px;
+  color: aliceblue;
+  margin-left: 50px;
+  font-weight: 500;
+  margin-top: 24px;
+  letter-spacing: -1px;
+}
+
+.writtenContent .btntwo {
+  height: 50px;
+  width: 150px;
+  border-radius: 25px;
+  border: 0;
+  background-color: #25D366;
+  margin-left: 50px;
+}
+
+.audio {
+  float: right;
+  margin-top: -220px;
+}
+
+.twoladies {
+  float: right;
+  margin-top: -150px;
+}
+
+.lastinImg {
+  height: 190px;
+  width: 100%;
+}
+
+.lastinImg img {
+  height: 60px;
+  width: 36%;
+  margin-left: 730px;
+}
+
+.helloimg {
+  height: 300px;
+  width: 95%;
+}
+
+.helloimg img {
+  margin-left: 30px;
+  height: 240px;
+  width: 100%;
+}
+
+.paragraph {
+  width: 100%;
+  height: 250px;
+}
+
+.paragraph p {
+  font-size: 48px;
+  font-weight: 500px;
+  text-align: center;
+  padding: 0px 150px 0px 150px;
+  line-height: 49px;
+  text-align-last: center;
+  letter-spacing: -2px;
+
+}
+
+.secondhi {
+  height: 300px;
+  width: 95%;
+}
+
+.secondhi img {
+  margin-left: 30px;
+  height: 240px;
+  width: 100%;
+}
+
+.parawithimg {
+  height: 500px;
+  width: 100%;
+}
+
+.leftpara {
+  height: 500px;
+  width: 50%;
+  position: absolute;
+  left: 0;
+}
+
+.leftpara h1 {
+  font-size: 70px;
+  font-weight: 500;
+  margin: 50px 30px 50px 90px;
+  line-height: 55px;
+  letter-spacing: -2px;
+}
+
+.leftpara p {
+  font-size: 21px;
+  font-weight: 500;
+  margin: -10px 30px 50px 90px;
+  line-height: 27px;
+  letter-spacing: -1px;
+}
+
+.leftpara .rightarrow {
+  margin-left: 85px;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  border-bottom: 3px solid #25D366;
+  font-weight: 500;
+}
+
+.leftpara a:hover {
+  color: #25D366;
+}
+
+.rightimg {
+  height: 540px;
+  width: 50%;
+}
+
+.rightimg img {
+  position: absolute;
+  right: 180px;
+}
+
+.blackDiv {
+  height: 730px;
+  width: 100%;
+  background-color: #1c1e21;
+  margin-top: 180px;
+}
+
+.leftBlock {
+  height: 730px;
+  width: 50%;
+}
+
+.leftBlock img {
+  height: 650px;
+  width: 80%;
+  margin: 70px 0px 10px 125px;
+}
+
+.rightPara {
+  height: 750px;
+  width: 47%;
+  float: right;
+  margin-top: -730px;
+  color: aliceblue;
+}
+
+.rightPara h1 {
+  font-size: 60px;
+  font-weight: 500;
+  margin: 250px 20px 0px 30px;
+  line-height: 57px;
+  letter-spacing: -1px;
+
+}
+
+.rightPara h1 span {
+  color: #25D366;
+}
+
+.rightPara p {
+  margin: 5px 80px 0px 30px;
+  font-size: 20px;
+  font-weight: 400px;
+  line-height: 24px;
+  letter-spacing: -1px;
+}
+
+.rightPara a {
+  color: aliceblue;
+  text-decoration: none;
+  border-bottom: 2px solid #25D366;
+  margin-left: 34px;
+  line-height: 40px;
+}
+
+.rightPara a:hover {
+  color: #25D366;
+}
+
+.rightPara .again {
+  margin-left: 10px;
+}
+
+.divTouch {
+  height: 700px;
+  width: 100%;
+  float: right;
+}
+
+.divTouch h1 {
+  font-size: 50px;
+  letter-spacing: -1px;
+}
+
+.imgTouch h1 {
+  font-size: 50px;
+  margin: 200px 150px 20px 70px;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+.imgTouch p {
+  font-size: 20px;
+  margin: 10px 150px 20px 70px;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+
+.backGround {
+  height: 500px;
+  width: 50%;
+  float: right;
+  margin-top: -200px;
+}
+
+.imgwithcell {
+  height: 450px;
+  width: 40%;
+  margin-top: -100px;
+  border-radius: 10px;
+  margin-left: 100px;
+}
+
+.family {
+  width: 70%;
+  margin-left: -330px;
+  margin-top: -480px;
+}
+
+.imgTouch a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 2px solid #25D366;
+  margin-left: 73px;
+  line-height: 40px;
+  font-size: 18px;
+}
+
+.imgTouch a:hover {
+  color: #25D366;
+}
+
+.imgTouch .touchlearn {
+  margin-left: 10px;
+}
+
+.sayFeel {
+  height: 700px;
+  width: 100%;
+  display: flex;
+}
+
+.righTone {
+  height: 700px;
+  width: 50%;
+}
+
+.righTone .smileGirl {
+  margin: 50px 50px 50px 190px;
+  width: 50%;
+}
+
+.righTone .heartOne {
+  width: 58%;
+  margin: -900px 100px 150px 170px;
+}
+
+.lefTone {
+  height: 700px;
+  width: 50%;
+}
+
+.lefTone h1 {
+  font-size: 50px;
+  margin: 250px 150px 0px 70px;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+.lefTone p {
+  font-size: 20px;
+  margin: 0px 150px 20px 70px;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+
+.lefTone a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 2px solid #25D366;
+  margin-left: 73px;
+  line-height: 40px;
+  font-size: 18px;
+}
+
+.lefTone a:hover {
+  color: #25D366;
+}
+
+.divVegetables {
+  height: 800px;
+  width: 100%;
+  display: flex;
+}
+
+.picWithVege {
+  height: 700px;
+  width: 50%;
+}
+
+.paraWithVege {
+  height: 800px;
+  width: 50%;
+}
+
+.paraWithVege img {
+  margin: 90px 50px 30px 90px;
+}
+
+.picWithVege h1 {
+  font-size: 50px;
+  font-weight: 600;
+  margin: 200px 50px 20px 80px;
+  letter-spacing: -1px;
+}
+
+.picWithVege p {
+  font-size: 20px;
+  margin: 0px 100px 20px 80px;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+
+.picWithVege a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 2px solid #25D366;
+  margin-left: 80px;
+  line-height: 40px;
+  font-size: 18px;
+}
+
+.picWithVege a:hover {
+  color: #25D366;
+}
+
+.divWithSlide {
+  height: 600px;
+  display: flex;
+  width: 100%;
+  background-color: #E6FFDA;
+  border-radius: 0px 0px 50px 50px;
+}
+
+.divWithSlide h1 {
+  font-size: 55px;
+  font-weight: 400;
+  margin: 100px 50px 20px 80px;
+  letter-spacing: -1px;
+
+}
+
+.divWithSlide .btnfirst {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  background-color: #E6FFDA;
+  cursor: pointer;
+ margin: 0px 0px 0px 10px;
+}
+
+.divWithSlide .btnsecond {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  background-color: #E6FFDA;
+  cursor: pointer;
+ margin-left: 100px;
+ /* margin: 5px; */
+ 
+}
+.nextPrev{
+  height: 200px;
+  width: 300px;
+  display: flex;
+  margin: 250px 10px 10px 10px;
+}
+
+.firstDiv {
+  height: 390px;
+  width: 500px;
+  border-radius: 25px;
+  margin: 80px 10px 30px 30px;
+  background-color: #FFFFFF;
+}
+
+.firstDiv h3 {
+  margin: 30px 90px 0px 50px;
+  font-size: 30px;
+  letter-spacing: -1px;
+}
+
+.firstDiv p {
+  margin: 22px 70px 0px 50px;
+  font-size: 17px;
+  letter-spacing: 0px;
+}
+
+.btnInsideDiv {
+  height: 52px;
+  width: 125px;
+  border-radius: 25px;
+  margin: 30px 10px 10px 52px;
+  background-color: #FFFFFF;
+  border: 1px solid black;
+}
+
+.firstDiv .whatsAppIcon {
+  font-size: 30px;
+  margin: 20px 0px 0px 50px;
+}
+
+.Footer {
+  height: 350px;
+  width: 100%;
+  background-color: #1c1e21;
+  color: #FFFFFF;
+  display: flex;
+}
+
+.footer1div {
+  height: 350px;
+  width: 30%;
+}
+
+.footer1div img {
+  height: 45px;
+  width: 180px;
+  margin: 90px 50px 130px 90px;
+}
+
+.footer1div button {
+  height: 55px;
+  width: 175px;
+  border-radius: 29px;
+  border: 1px solid black;
+  background-color: #25D366;
+  margin: 250px 30px 30px -225px;
+}
+
+.footer2div {
+  height: 350px;
+  width: 20%;
+}
+
+.smallPara {
+  font-size: 12px;
+  margin: 125px 50px 10px 15px;
+}
+
+.footer3div {
+  height: 350px;
+  width: 20%;
+}
+
+.smallPara {
+  font-size: 12px;
+  margin: 125px 50px 10px 15px;
+}
+
+.footer4div {
+  height: 350px;
+  width: 20%;
+}
+
+.smallPara {
+  font-size: 12px;
+  margin: 125px 50px 10px 15px;
+}
+
+.footer5div {
+  height: 350px;
+  width: 20%;
+}
+
+.footer5div .span {
+  font-size: 12px;
+  margin: 125px 50px 10px 15px;
+}
+
+.Footer h3 {
+  margin: 20px 10px 20px 15px;
+  word-spacing: 2px;
+}
+
+.lastDiv {
+  height: 180px;
+  width: 100%;
+  background-color: #1c1e21;
+  color: #FFFFFF;
+  display: flex;
+  float: right;
+}
+
+.twothree {
+  display: flex;
+  height: 180px;
+  width: 30%;
+}
+
+.twothree p {
+  height: 180px;
+  width: 30%;
+  margin: 50px 0px -30px 50px;
+  font-size: 15px;
+
+}
+
+.fass {
+  display: flex;
+  height: 180px;
+  width: 50%;
+  float: right;
+}
+
+.Icons {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  float: right;
+  border: 1px solid white;
+  align-items: center;
+  border-radius: 50%;
+  margin: 20px 5px 10px 60px;
+}
+
+.lastDiv select {
+  height: 50px;
+  width: 200px;
+  border-radius: 25px;
+  background-color: #1c1e21;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: -30px;
+  margin-top: 17px;
+  border: 2px solid #FFFFFF;
+}
+
+.onlyDivs {
+  height: 400px;
+  width: 7500px;
+  display: flex;
+}
+
+.connnectWithUs {
+  height: 500px;
+  width: 600px;
+  overflow: hidden;
+}
+
+.connectWithUshideDiv {
+  display: none;
 }
