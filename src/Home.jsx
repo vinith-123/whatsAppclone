@@ -1,10 +1,5 @@
 import React, { useState } from 'react'
 import '../src/index.css';
-import {Link} from 'react-router-dom';
-import HelpCenter from './HelpCenter'
-import Download from './Download';
-import Blog from './Blog'
-import Privacy from './Privacy';
 import First from './images/First.png'
 import Audio from './images/Audio.png'
 import GoodMornImg from './images/GoodMorningMom.png';
