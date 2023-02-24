@@ -47,9 +47,9 @@
 }
 
 .twoimg {
-  height: 600px;
+  height: 650px;
   width: 95%;
-  background-image: url('images/316546300_547692113846445_7299710494491288098_n.png');
+  background-image: url('images/HugTwoLAdyPic.png');
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 50px;
@@ -61,7 +61,7 @@
   color: aliceblue;
   margin-left: 50px;
   font-weight: 500;
-  margin-top: 20px;
+  margin-top: 30px;
   line-height: 80px;
   letter-spacing: -1px;
 
@@ -76,20 +76,53 @@
   height: 300px;
   width: 100%;
 }
-.writtenContent .emoji{
-  margin-left: 780px;
-  font-size: 30px;
+.contentLeft{
+  display: flex;
+  height: 300px;
+  width: 50%;
+  /* border: 3px solid black; */
+  float: left;
+}
+.contentRight{
+  display: flex;
+  height: 300px;
+  width: 50%;
+  /* border: 3px solid black; */
+  float: right;
 
+}
+.goodMornMsg{
+  height: 55px;
+  width: 450px;
+  margin-left: 700px;
+  margin: 20px 0px 0px 700px;
+ }  
+.writtenContent .emoji{
+  font-size: 30px;
+  margin: 320px 10px 0px -390px;
 }
 
 .secondPara {
   font-size: 20px;
   color: aliceblue;
-  margin-left: 50px;
+  margin-left: -300px;
   font-weight: 500;
-  margin-top: 24px;
+  margin-top: 200px;
   letter-spacing: -1px;
+  
 }
+.audio{
+  height: 60px;
+  width: 400px;
+  margin: 30px 0px 0px 90px;
+
+}
+ .teacup{
+  height: 100px;
+  width: 420px;
+ margin:10px 0px 10px -340px ;
+
+ }  
 
 .writtenContent .btntwo {
   height: 50px;
@@ -97,17 +130,16 @@
   border-radius: 25px;
   border: 0;
   background-color: #25D366;
-  margin-left: 50px;
-}
+  margin-left: -300px;
+  margin-top: 280px;
 
-.audio {
-  float: right;
-  margin-top: -220px;
+
 }
 
 .twoladies {
-  float: right;
-  margin-top: -150px;
+  height: 250px;
+  width: 400px;
+  margin: 100px 0px 0px -470px;
 }
 
 .lastinImg {
@@ -118,7 +150,7 @@
 .lastinImg img {
   height: 60px;
   width: 36%;
-  margin-left: 730px;
+ margin: 60px 10px 10px 680px;
 }
 
 .helloimg {
@@ -127,14 +159,17 @@
 }
 
 .helloimg img {
-  margin-left: 30px;
   height: 240px;
   width: 100%;
+  margin: 30px 0px 0px 30px;
+  /* margin-left: 30px; */
+
 }
 
 .paragraph {
   width: 100%;
   height: 250px;
+  margin-top: 50px;
 }
 
 .paragraph p {
@@ -172,7 +207,7 @@
 }
 
 .leftpara h1 {
-  font-size: 70px;
+  font-size: 60px;
   font-weight: 500;
   margin: 50px 30px 50px 90px;
   line-height: 55px;
@@ -274,8 +309,9 @@
 }
 
 .divTouch {
-  height: 700px;
+  height: 800px;
   width: 100%;
+  display: flex;
   float: right;
 }
 
@@ -283,47 +319,52 @@
   font-size: 50px;
   letter-spacing: -1px;
 }
+.imgTouch{
+  height: 800px;
+  width: 50%;
+  float: left;
+}
 
 .imgTouch h1 {
   font-size: 50px;
-  margin: 200px 150px 20px 70px;
+  margin: 250px 150px 20px 90px;
   font-weight: 600;
   letter-spacing: -1px;
 }
 
+
 .imgTouch p {
   font-size: 20px;
-  margin: 10px 150px 20px 70px;
+  margin: 10px 100px 20px 90px;
   font-weight: 500;
   letter-spacing: -1px;
 }
 
 .backGround {
-  height: 500px;
-  width: 50%;
-  float: right;
-  margin-top: -200px;
-}
-
-.imgwithcell {
-  height: 450px;
+  height: 800px;
   width: 40%;
-  margin-top: -100px;
-  border-radius: 10px;
-  margin-left: 100px;
+  float: right;
+  /* background-color: #25D366; */
 }
 
-.family {
+.backGround  .backwhite{
+  height: 600px;
+  width: 65%;
+  margin: 100px 10px 0px 90px;
+  
+}
+
+.backGround .family {
+  height: 450px;
   width: 70%;
-  margin-left: -330px;
-  margin-top: -480px;
+  margin: -20px 0px 0px -330px;
 }
 
 .imgTouch a {
   color: black;
   text-decoration: none;
   border-bottom: 2px solid #25D366;
-  margin-left: 73px;
+  margin-left: 93px;
   line-height: 40px;
   font-size: 18px;
 }
@@ -470,8 +511,12 @@
   background-color: #E6FFDA;
   cursor: pointer;
  margin-left: 100px;
- /* margin: 5px; */
- 
+}
+.divWithSlide .btnsecond:hover{
+  background-color: #25D366;
+}
+.divWithSlide .btnfirst:hover{
+  background-color: #25D366;
 }
 .nextPrev{
   height: 200px;

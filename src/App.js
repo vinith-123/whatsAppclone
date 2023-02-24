@@ -12,15 +12,17 @@ import Blog from './Blog';
 function App() {
   return (
     <div className="App">
-   { /*<Home/> */}
-    <BrowserRouter>
+   { <Home/> }
+    {/*<BrowserRouter>
     <Routes>
     <Route path='blog' element={<Blog/>} />
     <Route path='helpcenter' element={<HelpCenter/>} />
     <Route path='download' element={<Download/>} />
     <Route path='privacy' element={<Privacy/>} />
     </Routes></BrowserRouter>
-    <Privacy/>
+  <Privacy/>*/}
+
+  
     </div>
   );
 }

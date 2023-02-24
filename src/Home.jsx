@@ -5,6 +5,23 @@ import HelpCenter from './HelpCenter'
 import Download from './Download';
 import Blog from './Blog'
 import Privacy from './Privacy';
+import First from './images/First.png'
+import Audio from './images/Audio.png'
+import GoodMornImg from './images/GoodMorningMom.png';
+import twoLadyHide from './images/twoLadyHide.png'
+import teacup from './images/teaCup.png';
+import cantWait from './images/cantwait.png';
+import FourFive from './images/FourFiveImages.png'
+import Videocall from './images/videoCall.png'
+import speakfreely from './images/speakFreely.png'
+import backgroudWhite from './images/Backgroundwhite.png'
+import pausedVideo from './images/pausedvideo.png'
+import Laughlady from './images/laughingLady.png'
+import pebbleimg from './images/pebbleBeachimg.png'
+import vegeimg from './images/vegeImg.png'
+import whatsimg from './images/Qhrnh5evyPV.png'
+
+
 
 const information = [
   {
@@ -35,12 +52,10 @@ function Home() {
   const btnPre = () => {
     if(btnCounter > 0){
     setBtnCounter(btnCounter - 1)
-    // console.log("previous");
     console.log(btnCounter+ "pre");
     }
   }
   const btnNext = () => {
-    // console.log("next")
     if(btnCounter < 4){
     setBtnCounter(btnCounter + 1)
     console.log(btnCounter + "next");
@@ -49,7 +64,6 @@ function Home() {
 
   return (
     <div className='hoMe'>
-   
       <div className='nav-bar'>
         <img src="https://static.whatsapp.net/rsrc.php/v3/y7/r/DSxOAUB0raA.png"></img>
         <button>Download <i className="fa fa-download down-icon"></i> </button>
@@ -61,25 +75,29 @@ function Home() {
       </div>
       <div className='twoimg'>
         <div className='goodm'>
-          <img src=''></img>
+        <img className='goodMornMsg' src={GoodMornImg}/>
         </div>
         <div className='writtenContent'>
-          <p className='firstPara'>Message <br /> privately</p>
+        <div className='contentLeft'>
+          <p className='firstPara'>Message <br /> privately</p><br></br>
           <p className='secondPara'>Simple, reliable, private messaging and <br />calling for free*,
             available all over the<br /> world.</p>
           <button className='btntwo'>Download <i className="fa fa-download "></i></button>
-          <img className='audio' src='https://scontent.whatsapp.net/v/t39.8562-34/319012896_425159346360681_5365263553412164973_n.png?ccb=1-7&_nc_sid=2fbf2a&_nc_ohc=xDVZ939gg7UAX8o5bbn&_nc_ht=scontent.whatsapp.net&oh=01_AdSYvVWjmmlWEUz8bXUzQK7VCtYcvfLbJWJddSBeKSuAgw&oe=63E7FD88' />
-          <img className='twoladies' src='https://scontent.whatsapp.net/v/t39.8562-34/318653358_1119864552007486_249294869100988162_n.png?ccb=1-7&_nc_sid=2fbf2a&_nc_ohc=HJLQoGgy624AX8QDUKx&_nc_ht=scontent.whatsapp.net&oh=01_AdSnus1eOK-pKpvU3TzTKd9nWDLTuBl9ryrfLMKBEUJSMg&oe=63E69CB1' >
-          
+          </div>
+          <div className='contentRight'>
+          <img className='audio' src={Audio} />
+          <img src={teacup} className="teacup"/>
+          <img className='twoladies' src={twoLadyHide} >
           </img>
           <p className='emoji'> &#128525;</p> 
         </div>
         <div className='lastinImg'>
-          <img src='https://scontent.whatsapp.net/v/t39.8562-34/323914620_1571722909934742_4947035793330347072_n.png?ccb=1-7&_nc_sid=2fbf2a&_nc_ohc=oDYLlrSPDAwAX_8vb6C&_nc_ht=scontent.whatsapp.net&oh=01_AdTRemlQwg50picY6VFO-QiM7W9aEWO84TtT_c-ULJRCKQ&oe=63E6AEC8' />
+          <img className='canwait' src={cantWait} />
+        </div>
         </div>
       </div>
       <div className='helloimg'>
-        <img src='https://scontent.whatsapp.net/v/t39.8562-34/315574582_669241857978207_6336028129238262344_n.png?ccb=1-7&_nc_sid=2fbf2a&_nc_ohc=f8oWS8gS-0cAX96L-YQ&_nc_oc=AQlj-TFC5RcWGG8MBHj0Bix5lq7ZG6h9FRBtppUTXIoSQtfgtr15Ij6OcMpKrpteGBM&_nc_ht=scontent.whatsapp.net&oh=01_AdQstxUQLO5CqGxNSF-F1bs_h9JXWqWt8rJGyKEsn-IsXA&oe=63E6938C' />
+       <img   src={First} />
       </div>
       <div className='paragraph'>
         <p>With private messaging and calling, you can be yourself,
@@ -87,7 +105,7 @@ function Home() {
           people in your life no matter where they are.</p>
       </div>
       <div className='secondhi'>
-        <img src='https://scontent.whatsapp.net/v/t39.8562-34/315632381_5616928641708856_9210500231334849736_n.png?ccb=1-7&_nc_sid=2fbf2a&_nc_ohc=NgqpBei4iHIAX9GJ06v&_nc_ht=scontent.whatsapp.net&oh=01_AdTJz4ZjIKWD-R_4OROdbUmylbSdegJ3q2cfJy1Hh8P_pw&oe=63E7524D' />
+        <img src={FourFive} />
       </div>
       <div className='parawithimg'>
         <div className='leftpara'>
@@ -99,12 +117,12 @@ function Home() {
           <a href="learnMore" className='rightarrow'>Learn More <i className="fa fa-angle-right "></i></a>
         </div>
         <div className='rightimg'>
-          <img src='https://scontent.whatsapp.net/v/t39.8562-34/316211879_640016534274402_8272733547019635528_n.png?ccb=1-7&_nc_sid=2fbf2a&_nc_ohc=VacO-KmD9PYAX_GY6bh&_nc_ht=scontent.whatsapp.net&oh=01_AdRS8-i4YGd3E1WzuP0qw-UaxlncLNlyyjTCMCOnEeY59A&oe=63E82316' />
+          <img src={Videocall} />
         </div>
       </div>
       <div className='blackDiv'>
         <div className='leftBlock'>
-          <img src='https://scontent.whatsapp.net/v/t39.8562-34/316036583_870096634427722_4468595013887544943_n.png?ccb=1-7&_nc_sid=2fbf2a&_nc_ohc=w2p_0yfJpEkAX9achlO&_nc_ht=scontent.whatsapp.net&oh=01_AdTQJwlozPMyZFmtHzABfMEaDWhuWdkDYmnHp1H_ldi7Vg&oe=63E7AA71' />
+          <img src={speakfreely} />
         </div>
         <div className='rightPara'>
           <h1>Speak <br /> <span>freely</span></h1>
@@ -120,19 +138,21 @@ function Home() {
             with your groups</h1>
           <p>Whether it's planning an outing with friends or simply<br />
             staying on top of your family chats
-            , group conversations <br />should feel effortless.</p>
+            , group conversations should feel effortless.</p>
           <a href='learn'>Learn More<i className="fa fa-angle-right touchlearn"></i></a>
-          <div className='backGround'>
-            <div className='imgWithback'></div>
-            <img className='imgwithcell' src='https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcONR8dI2Y34coDbswxjtfsNmV9TG-SptyBBBJeOv_raTfyxvT'></img>
-            <img className='family' src="https://scontent.whatsapp.net/v/t39.8562-34/311769771_534650495159504_5541131595462341036_n.png?ccb=1-7&_nc_sid=2fbf2a&_nc_ohc=CfGEfPhfSmUAX_F3tm-&_nc_ht=scontent.whatsapp.net&oh=01_AdTyMc8T_TEqC3WcalK3l-b1WbgP7A6A8BDEmpD3Mzzg5Q&oe=63E90380"></img>
           </div>
-        </div>
+          <div className='backGround'>
+            <div className='imgWithback'>
+            <img  className='backwhite' src={backgroudWhite}/>
+          <img className='family' src={pausedVideo}></img>
+          </div>
+          </div>
+        
       </div>
       <div className='sayFeel'>
         <div className='righTone'>
-          <img className='smileGirl' src='https://scontent.whatsapp.net/v/t39.8562-34/317083769_795673198165216_6941067459072265627_n.png?ccb=1-7&_nc_sid=2fbf2a&_nc_ohc=NEfX2W7xKFoAX_dH3Da&_nc_oc=AQkxYPTZwHiJ2ERK7umXPnZ4nhmcFTmpNiuAEuH-knbuHcgnoaEmCUzSIcaSbL7oQtnuMYYfqus7hhmQ7kVxVjLz&_nc_ht=scontent.whatsapp.net&oh=01_AdQ-BxNzn4VHnut2oqbim8Xx5Lz189om-7v4qofaqMBXJA&oe=63E8BF2E' />
-          <img className='heartOne' src='https://scontent.whatsapp.net/v/t39.8562-34/312201775_3436222206622878_5992065132121718104_n.png?ccb=1-7&_nc_sid=2fbf2a&_nc_ohc=_Bxyu3usCWoAX_0qdeB&_nc_ht=scontent.whatsapp.net&oh=01_AdTgoNVO4aiZ3lYZpcNckwrJa9QMda6cluaC3AeiGB1dyQ&oe=63E92496' />
+          <img className='smileGirl' src={Laughlady} />
+          <img className='heartOne' src={pebbleimg} />
         </div>
         <div className='lefTone'>
           <h1>Say what<br />
@@ -153,7 +173,7 @@ function Home() {
           <a className='vegeA' href="learnMore">Learn More <i className="fa fa-angle-right "></i></a>
         </div>
         <div className='paraWithVege'>
-          <img src='https://scontent.whatsapp.net/v/t39.8562-34/318716890_590436546220129_8444143897573501384_n.png?ccb=1-7&_nc_sid=2fbf2a&_nc_ohc=VrZrs-EgMS0AX9YSk5-&_nc_ht=scontent.whatsapp.net&oh=01_AdRSJdm2140MrrBCVdOeW_UDuuVC7WAsKfKtsybh-xxadA&oe=63E9D38C' />
+          <img src={vegeimg} />
         </div>
       </div>
       <div className='divWithSlide'>
@@ -182,7 +202,7 @@ function Home() {
 
       <div className='Footer'>
         <div className='footer1div'>
-          <img src='https://static.whatsapp.net/rsrc.php/v3/yJ/r/Qhrnh5evyPV.png'></img>
+          <img src={whatsimg}></img>
           <button>Download <i className="fa fa-download footer-arrow"></i> </button>
         </div>
         <div className='footer2div'> <p className='smallPara'>What we do</p>
